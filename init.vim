@@ -159,6 +159,10 @@ set wrap
 
 set noshowmode
 
+if (has("termguicolors"))
+	set termguicolors
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remaps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
