@@ -8,7 +8,7 @@
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-plug call
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Begin vim pluggins for vim-plug
 Plug 'scrooloose/nerdtree' 
