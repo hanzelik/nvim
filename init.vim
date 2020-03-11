@@ -10,58 +10,21 @@
 " vim-plug call
 call plug#begin('~/.config/nvim/plugged')
 
-" Begin vim pluggins for vim-plug
 Plug 'scrooloose/nerdtree' 
-
-" Git wrapper for vim
 Plug 'tpope/vim-fugitive'
-
-" Vim-surround for better editing
 Plug 'tpope/vim-surround'
-
-" Tagbar for Vim
 Plug 'majutsushi/tagbar'
-
-" Better hybrid line numbers
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
-
-" Linux coding style
 Plug 'vivien/vim-linux-coding-style'
-
-" Objective-C syntax
 Plug 'b4winckler/vim-objc'
-
-" Zenburn theme
-Plug 'jnurmine/Zenburn'
-
-" Gruvbox theme
 Plug 'morhetz/gruvbox'
-
-" Wal colorscheme
-Plug 'dylanaraps/wal.vim'
-
-" Black background colorscheme
 Plug 'plainfingers/black_is_the_color'
-
-" Python-mode for Python development
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-
-" Go mode
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
-
-" Add Conquer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" vim-lightline statusbar
 Plug 'itchyny/lightline.vim'
-
-" vim-toml for Cargo.toml files in rust
 Plug 'cespare/vim-toml'
-
-" Better JavaScript highlighting
 Plug 'yuezk/vim-js'
-
-" JSX editing for react
 Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
@@ -178,12 +141,14 @@ map <C-K> <C-W>k<C-W><cr>
 map <C-H> <C-W>h<C-W><cr>
 map <C-L> <C-W>l<C-W><cr>
 
-noremap <leader>d :NERDTreeToggle<cr>
+noremap <silent><leader>d :NERDTreeToggle<cr>
 
-noremap <leader>t :TagbarToggle<cr>
+noremap <silent><leader>t :TagbarToggle<cr>
 
-noremap <Leader>m :blast<cr>
-noremap <Leader>n :bNext<cr>
+noremap <silent><Leader>m :blast<cr>
+noremap <silent><Leader>n :bNext<cr>
+
+nnoremap <silent><Esc> :noh<Return><Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Conquer of Completion setup
