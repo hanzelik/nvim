@@ -97,8 +97,6 @@ set number relativenumber
 
 set t_Co=256
 
-"colors zenburn
-"colorscheme wal
 "colorscheme black_is_the_color
 colorscheme gruvbox
 
@@ -121,6 +119,8 @@ set si
 set wrap
 
 set noshowmode
+
+set cursorline
 
 if (has("termguicolors"))
 	set termguicolors
